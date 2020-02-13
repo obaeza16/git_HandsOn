@@ -11,6 +11,7 @@ if [[ $seq =~ ^[ACGTU]+$ ]]; then
   fi
 else
   echo "The sequence is not DNA nor RNA"
+fi
 motif=$(echo $2 | tr a-z A-Z)
 if [[ -n $motif ]]; then
   echo -en "Motif search enabled: looking for motif '$motif' in sequence '$seq'... "
